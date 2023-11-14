@@ -145,9 +145,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
     vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam,co.aospa.sense
 
 # Charger
-PRODUCT_PACKAGES += \
-    libsuspend
-
 PRODUCT_VENDOR_PROPERTIES += \
     ro.charger.enable_suspend=true
 
