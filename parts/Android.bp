@@ -18,8 +18,4 @@ android_app {
         "co.aospa.resources",
         "SettingsLib",
     ],
-
-    optimize: {
-        proguard_flags_files: ["proguard.flags"],
-    },
 }
