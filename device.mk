@@ -95,7 +95,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.feature.usb_offload_sidetone_volume.enable=false \
     vendor.audio.feature.vbat.enable=true \
     vendor.audio.feature.wsa.enable=false \
-    vendor.audio.flac.sw.decoder.24bit=true \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio.hal.output.suspend.supported=false \
     vendor.audio_hal.period_size=192 \
