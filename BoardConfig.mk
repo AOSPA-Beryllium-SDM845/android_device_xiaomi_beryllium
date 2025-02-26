@@ -46,6 +46,9 @@ TARGET_TAP_TO_WAKE_EVENT_NODE  := "/dev/input/event2"
 # GPS
 LOC_HIDL_VERSION := 4.0
 
+# Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
      $(DEVICE_PATH)/configs/hidl/xiaomi_vendor_framework_compatibility_matrix.xml
@@ -109,6 +112,9 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+BOARD_SEPOLICY_M4DEFS += \
+    sysfs_battery_supply=vendor_sysfs_battery_supply \
+    sysfs_usb_supply=vendor_sysfs_usb_supply
 
 # Vendor
 include vendor/xiaomi/beryllium/BoardConfigVendor.mk

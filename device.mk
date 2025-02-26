@@ -270,6 +270,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # IMS
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.block_binder_thread_on_incoming_calls=false
